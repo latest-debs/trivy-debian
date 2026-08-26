@@ -1,0 +1,46 @@
+{
+  "gate": "pass",
+  "license": {
+    "declared": "Apache-2.0",
+    "detected": [
+      "Apache-2.0"
+    ],
+    "license_files": [
+      "//tmp/tmp.pyGT7ahuJD/x/LICENSE"
+    ],
+    "matches": true,
+    "status": "pass",
+    "detail": "declared Apache-2.0 matches detected Apache-2.0"
+  },
+  "asset": {
+    "format": "tar.gz",
+    "size": 46088126,
+    "valid": true,
+    "is_html": false,
+    "binary": "trivy",
+    "elf_arch": "i386",
+    "status": "pass",
+    "detail": "valid tar.gz archive containing 1 ELF executable(s); first: trivy (i386); release covers: arm64 ppc64el s390x "
+  },
+  "architectures": {
+    "covered": [
+      "arm64",
+      "ppc64el",
+      "s390x"
+    ],
+    "missing": [
+      "amd64",
+      "armel",
+      "armhf",
+      "i386",
+      "riscv64",
+      "loong64"
+    ],
+    "assets": {
+      "arm64": "trivy_0.74.0_Linux-ARM64.tar.gz",
+      "ppc64el": "trivy_0.74.0_Linux-PPC64LE.tar.gz",
+      "s390x": "trivy_0.74.0_Linux-s390x.tar.gz"
+    }
+  },
+  "vetted_at": "2026-08-26T04:34:42Z"
+}

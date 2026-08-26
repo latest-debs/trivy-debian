@@ -1,0 +1,9 @@
+# Package definition for trivy
+
+package_name: trivy
+github_repo: aquasecurity/trivy
+artifact_format: tar.gz
+description: "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
+license: Apache-2.0
+
+# Build for all Debian suites and all supported architectures.
