@@ -64,7 +64,7 @@ jobs:
 
       - name: Detect version
         id: detect
-        run: bash .github/scripts/detect-version.sh
+        run: bash -x .github/scripts/detect-version.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MANUAL_VERSION: ${{ inputs.version }}
