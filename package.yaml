@@ -6,15 +6,4 @@ artifact_format: tar.gz
 description: "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more"
 license: Apache-2.0
 
-# Explicit release patterns. Trivy's amd64 upstream asset is named
-# "Linux-64bit" (not x86_64/amd64), which auto-discovery cannot map, so the
-# arch map is pinned explicitly for every arch we ship.
-architectures:
-  amd64:
-    release_pattern: "trivy_{version}_Linux-64bit.tar.gz"
-  arm64:
-    release_pattern: "trivy_{version}_Linux-ARM64.tar.gz"
-  ppc64el:
-    release_pattern: "trivy_{version}_Linux-PPC64LE.tar.gz"
-  s390x:
-    release_pattern: "trivy_{version}_Linux-s390x.tar.gz"
+# Build for all Debian suites and all supported architectures.
